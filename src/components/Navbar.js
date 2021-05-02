@@ -11,7 +11,9 @@ class Navbar extends Component {
                     <ul className="sidebar-navbar">
                         <li className="navbar-item navbar-item-about"> About Me </li>
                         <li className="navbar-item navbar-item-contact"> Contact Me </li>
-                        <li className="navbar-item navbar-item-resume"> Resume </li>
+                        <a className="navbar-resume-link" href="https://drive.google.com/file/d/14pER2spfeTQz0BPpgMcPnI9opqfbBtD5/view" target="_blank">
+                            <li className="navbar-item navbar-item-resume"> Resume </li>
+                        </a>
                         <li className="navbar-item navbar-item-projects"> Projects </li>
                     </ul>
 

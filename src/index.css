@@ -71,8 +71,10 @@ Layout
   margin: 8rem auto;
 
   width: 80%;
+  height: 100rem; /*temporary, untill we add content inside of it */
 
-  border-radius: 5px;
+  overflow: hidden;
+  border-radius: 1rem;
   box-shadow: var(--box-shadow);
   font-size: 3rem;
 }
@@ -105,11 +107,23 @@ Navbar
   list-style: none;
 }
 
-.navbar-item:not(:last-child) {
+/* the resume navbar item is a last child of the anchor link 
+that's why we exclude it, as we want the projects  div only*/
+.navbar-item:not(:last-child:not(.navbar-item-resume)) {
   margin-bottom: 4rem;
 }
-.navbar-item:first-child {
+
+/* the resume navbar item is a first child of the anchor link 
+that's why we exclude it, as we want the about me div only*/
+.navbar-item:first-child:not(.navbar-item-resume) {
   margin-top: 8rem;
+}
+
+.navbar-resume-link {
+  text-decoration: none;
+  color: currentColor;
+
+  
 }
 
 .navbar-item {
