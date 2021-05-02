@@ -52,7 +52,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  background-image: var(--gradient-1);
+  
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--color-font-second);
@@ -60,6 +60,24 @@ body {
   
 
   min-height: 100vh;
+}
+
+.background {
+  height: 120rem;
+  background-image: var(--gradient-1);
+
+}
+
+.background-about-color {
+  background-image: var(--gradient-1);
+}
+
+.background-contact-color {
+  background-image: var(--gradient-2);
+}
+
+.background-projects-color {
+  background-image: var(--gradient-4);
 }
 
 /*///////////////////////////////////
@@ -123,7 +141,6 @@ that's why we exclude it, as we want the about me div only*/
   text-decoration: none;
   color: currentColor;
 
-  
 }
 
 .navbar-item {
@@ -170,36 +187,52 @@ that's why we exclude it, as we want the about me div only*/
   }
 }
 
-.navbar-item-about:hover {
-  background-image: var(--gradient-1);
-}
+.navbar-item-about:hover,
 .navbar-item-about:hover::before {
   background-image: var(--gradient-1);
 }
 
-.navbar-item-contact:hover {
-  background-image: var(--gradient-2);
-}
-
+.navbar-item-contact:hover,
 .navbar-item-contact:hover::before {
   background-image: var(--gradient-2);
 }
 
-.navbar-item-resume:hover {
-  background-image: var(--gradient-3);
-}
-
+.navbar-item-resume:hover,
 .navbar-item-resume:hover::before {
   background-image: var(--gradient-3);
 }
 
-.navbar-item-projects:hover {
-  background-image: var(--gradient-4);
-}
-
+.navbar-item-projects:hover, 
 .navbar-item-projects:hover::before {
   background-image: var(--gradient-4);
 }
+
+
+.navbar-item-clicked {
+  transform: translateX(1rem);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.navbar-item-clicked::before {
+  
+  animation: width-slide 1s;
+  animation-fill-mode: forwards;
+}
+
+.navbar-item-about-clicked,
+.navbar-item-about-clicked::before {
+  background-image: var(--gradient-1);
+} 
+
+.navbar-item-contact-clicked,
+.navbar-item-contact-clicked::before {
+  background-image: var(--gradient-2);
+} 
+
+.navbar-item-projects-clicked,
+.navbar-item-projects-clicked::before {
+  background-image: var(--gradient-4);
+} 
 
 .navbar-social {
   margin-bottom: 2.5rem;

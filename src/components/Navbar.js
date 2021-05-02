@@ -4,17 +4,52 @@ import { TiSocialInstagram, TiSocialLinkedin, TiSocialGithub, TiSocialTwitter, T
 
 
 class Navbar extends Component {
+    handleClick = (e) => {
+        const items = ['about', 'contact', 'resume', 'projects'];
+        const item = e.target;
+        const background = document.querySelector ('.background');
+        item.classList.add ('navbar-item-clicked');
+
+
+        item.classList.forEach ((className) => {
+            for (let i = 0; i < 4; i++) {
+                if (className.includes (items[i]) && !className.includes (`navbar-item-${items[i]}-clicked`)) {
+                    item.classList.add (`navbar-item-${items[i]}-clicked`);
+                    background.classList.add (`background-${items[i]}-color`);
+                }
+            }
+        })
+        
+        // remove other items extra classes
+        for (let i = 0; i < 4; i++) {
+            const currentItem = document.querySelector (`.navbar-item-${items[i]}`);
+            if (currentItem === item) {
+                continue;
+            }
+            if (currentItem.classList.contains (`navbar-item-${items[i]}-clicked`)) {
+                currentItem.classList.remove (`navbar-item-${items[i]}-clicked`);
+            }
+            if (currentItem.classList.contains (`navbar-item-clicked`)) {
+                currentItem.classList.remove (`navbar-item-clicked`);
+            }
+            if (background.classList.contains (`background-${items[i]}-color`)) {
+                background.classList.remove (`background-${items[i]}-color`);
+            }
+        }
+        
+    }
+
     render () {
         return (
             <Fragment>
                 <div className="sidebar">
                     <ul className="sidebar-navbar">
-                        <li className="navbar-item navbar-item-about"> About Me </li>
-                        <li className="navbar-item navbar-item-contact"> Contact Me </li>
+                        <li className="navbar-item navbar-item-about navbar-item-clicked navbar-item-about-clicked" onClick={this.handleClick}> About Me </li>
+                        <li className="navbar-item navbar-item-contact" onClick={this.handleClick}> Contact Me </li>
                         <a className="navbar-resume-link" href="https://drive.google.com/file/d/14pER2spfeTQz0BPpgMcPnI9opqfbBtD5/view" target="_blank">
-                            <li className="navbar-item navbar-item-resume"> Resume </li>
+                            <li className="navbar-item navbar-item-resume" > Resume </li>
                         </a>
-                        <li className="navbar-item navbar-item-projects"> Projects </li>
+                        <li className="navbar-item navbar-item-projects" onClick={this.handleClick}> Projects </li>
                     </ul>
 
                     <div className="navbar-social">
