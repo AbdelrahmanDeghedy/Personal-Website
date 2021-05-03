@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-import projImg from '../img/2048.png';
 
 class ProjectCard extends Component {
     

@@ -1,8 +1,9 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component, createContext, Fragment } from 'react';
 import { Route } from 'react-router-dom';
 import Navbar from './Navbar';
 import About from './About';
 import Projects from './Projects';
+import Contact from './Contact';
 
 class Layout extends Component {
     render () {
@@ -15,7 +16,7 @@ class Layout extends Component {
 
                     <div className="main-portion">
                         <Route exact path="/" component={About}/>
-                        <Route exact path="/contact" component={About}/>
+                        <Route exact path="/contact" component={Contact}/>
                         <Route exact path="/projects" component={Projects}/>
                         <Route exact path="/quotes" component={About}/>
                         
