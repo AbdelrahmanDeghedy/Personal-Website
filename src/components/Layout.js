@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
+import Quotes from './Quotes';
 
 class Layout extends Component {
     render () {
@@ -18,7 +19,7 @@ class Layout extends Component {
                         <Route exact path="/" component={About}/>
                         <Route exact path="/contact" component={Contact}/>
                         <Route exact path="/projects" component={Projects}/>
-                        <Route exact path="/quotes" component={About}/>
+                        <Route exact path="/quotes" component={Quotes}/>
                         
                     </div>
                 </div>
