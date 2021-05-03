@@ -1,4 +1,4 @@
-import React, { Component, createContext, Fragment } from 'react';
+import React, { Component, Fragment } from 'react';
 import { Route } from 'react-router-dom';
 import Navbar from './Navbar';
 import About from './About';

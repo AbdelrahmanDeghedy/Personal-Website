@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import { quotes } from "../utils/_Data";
 import Footer from "./Footer";
 

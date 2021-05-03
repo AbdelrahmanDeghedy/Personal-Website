@@ -4,7 +4,7 @@ class ProjectCard extends Component {
     
 
     render () {
-        const { pid, name, img, descriptionArray, githubLink } = this.props;
+        const { name, img, descriptionArray, githubLink } = this.props;
 
         return (
             <Fragment>
@@ -20,7 +20,7 @@ class ProjectCard extends Component {
                         <div className="project-card-description">
                             {
                                 descriptionArray.map ((description) => {
-                                return (<div key={pid} className="project-card-description-paragraph">
+                                return (<div key={description} className="project-card-description-paragraph">
                                     {description}
                                 </div>)
                                 })

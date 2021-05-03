@@ -14,11 +14,11 @@ class Projects extends Component {
                     Object.keys (projects).map ((pid) => {
                         return (
                             <div key={pid} className="projects-item">
-                                <ProjectCard pid={pid}
-                                 name={projects[pid].name}
-                                img={projects[pid].img}
-                                descriptionArray={projects[pid].description}
-                                githubLink={projects[pid].github} 
+                                <ProjectCard 
+                                    name={projects[pid].name}
+                                    img={projects[pid].img}
+                                    descriptionArray={projects[pid].description}
+                                    githubLink={projects[pid].github} 
                                 />
                             </div>
                         )

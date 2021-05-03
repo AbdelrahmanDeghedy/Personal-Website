@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { AiFillBehanceCircle } from 'react-icons/ai';
 import { TiSocialInstagram, TiSocialLinkedin, TiSocialGithub, TiSocialTwitter, TiSocialFacebook } from 'react-icons/ti';
+import { FaDev } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 class Navbar extends Component {
@@ -52,7 +53,7 @@ class Navbar extends Component {
                             <li className="navbar-item navbar-item-contact" onClick={this.handleClick}> Contact Me </li>
                         </Link>
 
-                        <a className="navbar-resume-link" href="https://drive.google.com/file/d/14pER2spfeTQz0BPpgMcPnI9opqfbBtD5/view" target="_blank">
+                        <a rel="noreferrer" className="navbar-resume-link" href="https://drive.google.com/file/d/14pER2spfeTQz0BPpgMcPnI9opqfbBtD5/view" target="_blank">
                             <li className="navbar-item navbar-item-resume" > Resume </li>
                         </a>
                         <Link to="projects" className="remove-link-style">
@@ -71,33 +72,38 @@ class Navbar extends Component {
 
                         <div className="navbar-social-icons-container">
                             <div className="navbar-social-icon-facebook">
-                                <a href="https://www.facebook.com/AbdelrahmanDeghedy/" target="_blank">
+                                <a rel="noreferrer" href="https://www.facebook.com/AbdelrahmanDeghedy/" target="_blank">
                                     <TiSocialFacebook />
                                 </a>
                             </div>
                             <div className="navbar-social-icon-twitter">
-                                <a href="https://twitter.com/Deghedy_" target="_blank">
+                                <a rel="noreferrer" href="https://twitter.com/Deghedy_" target="_blank">
                                     <TiSocialTwitter />
                                 </a>
                             </div>
                             <div className="navbar-social-icon-github">
-                                <a href="https://github.com/AbdelrahmanDeghedy" target="_blank">
+                                <a rel="noreferrer" href="https://github.com/AbdelrahmanDeghedy" target="_blank">
                                     <TiSocialGithub /> 
                                 </a>
                             </div>
                             <div className="navbar-social-icon-linkidin">
-                                <a href="https://www.linkedin.com/in/abdelrahman-deghedy/" target="_blank">
+                                <a rel="noreferrer" href="https://www.linkedin.com/in/abdelrahman-deghedy/" target="_blank">
                                     <TiSocialLinkedin />
                                 </a>
                             </div>
                             <div className="navbar-social-icon-instagram">
-                                <a href="https://www.instagram.com/abdelrahman_deghedy/" target="_blank">
+                                <a rel="noreferrer" href="https://www.instagram.com/abdelrahman_deghedy/" target="_blank">
                                     <TiSocialInstagram />
                                 </a>
                             </div>
                             <div className="navbar-social-icon-behance">
-                                <a href="https://www.behance.net/Deghedy" target="_blank">
+                                <a rel="noreferrer" href="https://www.behance.net/Deghedy" target="_blank">
                                     <AiFillBehanceCircle />
+                                </a>
+                            </div>
+                            <div className="navbar-social-icon-dev">
+                                <a rel="noreferrer" href="https://dev.to/abdelrahmandeghedy" target="_blank">
+                                    <FaDev />
                                 </a>
                             </div>
                         </div>

@@ -18,7 +18,7 @@ class Contact extends Component {
 
                 <form className="contact-form" action="https://formsubmit.co/abdelrahman.deghedy@gmail.com" method="POST" onSubmit={this.handleSubmit}>
                     <div className="contact-form-item">
-                        <label className="contact-form-item-label" for="fname">
+                        <label className="contact-form-item-label" htmlFor="fname">
                             First Name
                         </label>
                         <input 
@@ -32,7 +32,7 @@ class Contact extends Component {
                     </div>
 
                     <div className="contact-form-item">
-                        <label className="contact-form-item-label" for="lname">
+                        <label className="contact-form-item-label" htmlFor="lname">
                             Last Name
                         </label>
                         <input 
@@ -46,7 +46,7 @@ class Contact extends Component {
                     </div>
 
                     <div className="contact-form-item">
-                        <label className="contact-form-item-label" for="email">
+                        <label className="contact-form-item-label" htmlFor="email">
                             Email
                         </label>
                         <input 
@@ -60,7 +60,7 @@ class Contact extends Component {
                     </div>
 
                     <div className="contact-form-item">
-                        <label className="contact-form-item-label" for="content">
+                        <label className="contact-form-item-label" htmlFor="content">
                             Content
                         </label>
                         <textarea 
