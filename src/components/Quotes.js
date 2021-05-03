@@ -21,7 +21,7 @@ class Quotes extends Component {
     render () {
         const { content, author } = this.state;
         return (
-            <Fragment>
+            <div className="quotes-container">
                 <div className="quote-container">
                     <div className="quote-quotation-mark">
                         “
@@ -40,7 +40,7 @@ class Quotes extends Component {
                     </button>
                 </div>
                 <Footer />
-            </Fragment>
+            </div>
         )
     }
 }

@@ -1,5 +1,11 @@
+.quotes-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .quote-container {
-    margin: 22rem auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
     border : var(--border);
