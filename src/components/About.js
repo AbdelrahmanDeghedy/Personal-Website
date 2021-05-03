@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import meImg from "../img/small-version.jpg";
+import Footer from "./Footer";
 
 class About extends Component {
     render () {
@@ -23,25 +24,17 @@ class About extends Component {
                             </div>
                         </div>
                         <div className="summary-content-paragraph summary-content-paragraph-first">
-                        I'm a second-year student at the Communication department. I study in the Faculty of Engineering-Alexandria University. 
-                        Self-learner, writer, and in love with talking to people and hearing their stories.
-
+                            I'm a second-year student at the Communication department. I study in the Faculty of Engineering-Alexandria University. Self-learner, writer, and in love with talking to people and hearing their stories.
                         </div>
 
                         <div className="summary-content-paragraph summary-content-paragraph-second">
-                        I'm a second-year student at the Communication department. I study in the Faculty of Engineering-Alexandria University. 
-                        Self-learner, writer, and in love with talking to people and hearing their stories.
+                            I chose to be a software developer, because I really enjoy the process of solving problems, also the field is so versatile, and this gives me a huge challenge to work in.
                         </div>
+
+                        
                     </div>
 
-                    <div className="footer-container">
-                        <div className="footer-rights">
-                            All rights reserved &copy; 2021.
-                        </div>
-                        <div className="footer-creator">
-                            Coded by: Abdelrahman Deghedy.
-                        </div>
-                    </div>
+                    <Footer />
                 </div>
             </Fragment>
         )

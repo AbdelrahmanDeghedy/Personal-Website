@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import { quotes } from "../utils/_Data";
+import Footer from "./Footer";
 
 class Quotes extends Component {
     state = {
@@ -20,23 +21,26 @@ class Quotes extends Component {
     render () {
         const { content, author } = this.state;
         return (
-            <div className="quote-container">
-                <div className="quote-quotation-mark">
-                    “
-                </div>
+            <Fragment>
+                <div className="quote-container">
+                    <div className="quote-quotation-mark">
+                        “
+                    </div>
 
-                <div className="quote-content">
-                    {content}
-                </div>
+                    <div className="quote-content">
+                        {content}
+                    </div>
 
-                <div className="quote-author">
-                    &mdash; {author}
-                </div>
+                    <div className="quote-author">
+                        &mdash; {author}
+                    </div>
 
-                <button className="quote-button-next contact-form-button" onClick={this.handleNextQuote}>
-                    Show Next
-                </button>
-            </div>
+                    <button className="quote-button-next contact-form-button" onClick={this.handleNextQuote}>
+                        Show Next
+                    </button>
+                </div>
+                <Footer />
+            </Fragment>
         )
     }
 }

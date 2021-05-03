@@ -1,8 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
+import Footer from "./Footer";
 
 class Contact extends Component {
     render () {
         return (
+            <Fragment>
+
             <div className="contact-container">
                 <div className="contact-text">
                     <div className="contact-text-primary">
@@ -99,6 +102,8 @@ class Contact extends Component {
 
                 </form>
             </div>
+            <Footer />
+            </Fragment>
         )
     }
 }
