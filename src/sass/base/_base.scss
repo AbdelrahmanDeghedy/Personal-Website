@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
+// break points
+
+$large-screen-1 : 92em;
+$large-screen-2 : 85em;
+$large-screen-3 : 76em;
+$large-screen-4 : 69em;
+$large-screen-5 : 55em;
+$large-screen-6 : 43em;
+
+
+
 :root {
   --color-primary-first : rgb(255, 239, 186);
   --color-primary-second : rgb(255, 255, 255);
@@ -80,3 +91,4 @@ body {
 .background-projects-color {
   background-image: var(--gradient-4);
 }
+

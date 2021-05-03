@@ -7,6 +7,10 @@
     text-transform: capitalize;
     margin : 3rem 3rem 5rem 3rem;
     border-bottom: var(--border);
+
+    @media (max-width : $large-screen-6) {
+      font-size: 1.5rem;
+    }
   }
   
   .projects-item{

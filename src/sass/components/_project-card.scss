@@ -46,6 +46,7 @@
     font-weight: 500;
     position: absolute;
     opacity: 0;
+    
     transition: opacity .5s;
   }
   
@@ -92,6 +93,13 @@
     border-top: var(--border);
   
     transition: all .5s;
+
+    @media (max-width : $large-screen-3) {
+      font-size: 1.8rem;
+    }
+    @media (max-width : $large-screen-6) {
+      font-size: 1.3rem;
+    }
   }
   
   .project-card-link-itself:hover {

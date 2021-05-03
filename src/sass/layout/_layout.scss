@@ -9,13 +9,28 @@
     border-radius: 1rem;
     box-shadow: var(--box-shadow);
     font-size: 3rem;
+
+    @media (max-width : $large-screen-4) {
+      margin: 0rem auto;
+      width: 100%;
+    }
+
+    @media (max-width : $large-screen-5) {
+     flex-direction: column;    
+    }
   }
   
   .side-portion {
     background-color: #f0ebcc;
     flex : 0 0 33%;
   
-    border-right: var(--border)
+    border-right: var(--border);
+
+    @media (max-width : $large-screen-5) {
+      flex : 0 1 20%;
+    }
+
+
   }
   
   .main-portion {

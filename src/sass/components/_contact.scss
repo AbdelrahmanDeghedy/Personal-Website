@@ -37,6 +37,8 @@
     margin: 2rem;
     display: flex;
     flex-direction: column;
+
+
   }
   
   
@@ -53,6 +55,10 @@
     border-radius: 2rem;
     outline: none;
     border: var(--border);
+
+    @media (max-width : $large-screen-3) {
+      width: 30rem;
+    }
   } 
   
   .contact-form-item-input-content {

@@ -4,18 +4,42 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+
   }
   
   .sidebar-navbar {
     list-style: none;
+
+    @media (max-width : $large-screen-5) {
+      display: flex;
+      flex-direction: row;
+      
+    }
+    @media (max-width : $large-screen-6) {
+      flex-wrap: wrap;
+      align-content:center;
+      margin :0;
+      line-height: .5rem;
+      align-items: center;
+    }
   }
   
   .navbar-item:not(.navbar-item-last) {
     margin-bottom: 4rem;
+
+    @media (max-width : $large-screen-5) {
+      margin-bottom: 0rem; 
+    }
   }
   
   .navbar-item-first {
     margin-top: 8rem;
+
+    @media (max-width : $large-screen-5) {
+      margin-top: 0rem;
+      
+    }
   }
   
   .navbar-resume-link {
@@ -42,6 +66,17 @@
     cursor: pointer;
   
     transition: all .5s;
+
+    @media (max-width : $large-screen-5) {
+      font-size: 2.2rem;
+      margin-top: 2rem;
+      
+    }
+
+    @media (max-width : $large-screen-6) {
+      margin-bottom: 3rem;
+    }
+    
   }
   
   .navbar-item::before {
@@ -61,6 +96,10 @@
     transform: translateX(1rem);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media (max-width : $large-screen-6) {
+      transform: translateX(0px);
+    }
   }
   
   @keyframes width-slide {
@@ -137,6 +176,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (max-width : $large-screen-5) {
+      margin-top: -2rem;
+    }
   }
   
   .navbar-social-text {
