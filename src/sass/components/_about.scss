@@ -52,7 +52,7 @@
     overflow: hidden;
     height: 30rem;
     width: 30rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
     box-shadow: var(--box-shadow);
   
   }
@@ -86,7 +86,7 @@
   
   .summary-content-paragraph {
     align-self: stretch;
-    display: flex;
+
     font-size: 1.8rem;
     padding: 2.5rem;
   }
@@ -95,21 +95,30 @@
     margin-top: 2rem;
   }
   
-  .summary-content-paragraph-second {
+  .summary-content-header {
+    font-weight: 500;
+    margin-top: 4rem;
+  }
+  
+  .link-inside {
+    margin : 0 .5rem;
+  }
+
+  .showoff-container {
+    border-radius: 3rem;
     
+    overflow: hidden;
   }
-  
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.5rem;
+
+  .showoff-img-itself {
+    width: 50rem;
   }
-  
-  .footer-rights {
-    margin-left: 1.5rem;
+
+  .showoff-img-itself-acm {
+    height: 60rem;
+    margin-bottom: 5rem;
   }
-  
-  .footer-creator {
-    margin-right: 1.5rem;
+
+  .showoff-container-scene {
+    height: 30rem;
   }
-  
