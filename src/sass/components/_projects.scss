@@ -1,0 +1,15 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .projects-container-header {
+    text-transform: capitalize;
+    margin : 3rem 3rem 5rem 3rem;
+    border-bottom: var(--border);
+  }
+  
+  .projects-item{
+    margin-bottom: 7rem;
+  
+  }
