@@ -38,7 +38,7 @@ export let projects = {
         description : ["This project aims to build a web tool that allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites.", "When a user submits a URL of an article, the web page then dispalys sentiment analysis returned from meaningcloud API, based on the contents of the article."],
         img : imgEvaluateNewsNlp,
         github : "https://github.com/AbdelrahmanDeghedy/Evaluate-News-Articles-NLP",
-        technologies : ["HTML", "CSS", "Javascript", , "node", "express", "webpack"]
+        technologies : ["HTML", "CSS", "Javascript", "node", "express", "webpack"]
     }
 }
 

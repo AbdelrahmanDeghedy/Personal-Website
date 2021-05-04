@@ -6,7 +6,7 @@ class ResumeProject extends Component {
         return (
             <Fragment>
                 <div>
-                    <h3 class="resume-project-item-name"> {name} </h3>
+                    <h3 className="resume-project-item-name"> {name} </h3>
                     <ul  className="resume-section-content">
                         {
                             description.map ((descriptionItem) => {
@@ -27,7 +27,7 @@ class ResumeProject extends Component {
                         }
                     </ul>
                     <div>
-                        <a className="resume-link" href={link} target="_blank">Github Link</a>
+                        <a rel="noreferrer" className="resume-link" href={link} target="_blank">Github Link</a>
                     </div>
                 </div>
             </Fragment>
