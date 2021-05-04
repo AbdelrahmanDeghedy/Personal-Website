@@ -39,7 +39,6 @@
     display: flex;
     flex-direction: column;
 
-
   }
   
   
@@ -62,6 +61,14 @@
     }
   } 
   
+  .contact-form-item-input::placeholder {
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .contact-form-item-input::-moz-placeholder {
+    font-family: 'Courier New', Courier, monospace;
+  }
+
   .contact-form-item-input-content {
     height: 20rem;
     

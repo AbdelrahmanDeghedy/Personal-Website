@@ -8,13 +8,22 @@
       align-items: center;
       padding-bottom: 3rem;
     }
+
   }
   
   .footer-rights {
     margin-left: 1.5rem;
+
+    @media (max-width : $large-screen-6) {
+      margin: 0rem;
+    }
   }
   
   .footer-creator {
     margin-right: 1.5rem;
+
+    @media (max-width : $large-screen-6) {
+      margin : 0;
+    }
   }
   

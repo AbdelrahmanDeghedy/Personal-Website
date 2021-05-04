@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import meImg from "../img/small-version.jpg";
 import Footer from "./Footer";
-// import scene from '../img/scene1.jpg';
 import scene from '../img/scene2.jpg';
 import ecpcImg from '../img/acm.jpg';
 
@@ -39,11 +38,11 @@ class About extends Component {
                         </div>
 
                         <div className="summary-content-paragraph">
-                            I love writing and communicating my thoughts. I'm currently writing at <a rel="noreferrer" className="link-inside" href="https://dev.to/abdelrahmandeghedy" target="_blank"> dev.to </a> check it out!.
+                            I love writing and communicating my thoughts. I'm currently writing at <a rel="noreferrer" className="resume-link link-inside" href="https://dev.to/abdelrahmandeghedy" target="_blank"> dev.to </a> check it out!.
                         </div>
 
                         <div className="summary-content-paragraph">
-                            Whenever I see a good scene, I always use my phone camera to capture it. Unfortunately, good moments always pass, but memories last forever. You can find more on my  <a rel="noreferrer" className="link-inside" href="https://www.behance.net/Deghedy" target="_blank"> behane </a> account.
+                            Whenever I see a good scene, I always use my phone camera to capture it. Unfortunately, good moments always pass, but memories last forever. You can find more on my  <a rel="noreferrer" className="resume-link link-inside" href="https://www.behance.net/Deghedy" target="_blank"> behane </a> account.
                         </div>
 
                         <div className="showoff-container showoff-container-scene">

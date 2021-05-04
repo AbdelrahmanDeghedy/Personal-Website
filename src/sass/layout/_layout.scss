@@ -16,7 +16,9 @@
     }
 
     @media (max-width : $large-screen-5) {
-     flex-direction: column;    
+     flex-direction: column;
+     height: 105%;
+     margin-top: -2rem;
     }
   }
   
@@ -36,6 +38,6 @@
   .main-portion {
     background-color: #fff;
     flex : 1;
-  
+
     overflow: auto; /* to make the right container scrollable */
   }

@@ -4,8 +4,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
-
   }
   
   .sidebar-navbar {
@@ -32,7 +30,7 @@
       margin-bottom: 0rem; 
     }
   }
-  
+
   .navbar-item-first {
     margin-top: 8rem;
 
@@ -102,15 +100,6 @@
     }
   }
   
-  @keyframes width-slide {
-    0% {
-      width: 0;
-    }
-  
-    100% {
-      width: 100%;
-    }
-  }
   
   .navbar-item-about:hover,
   .navbar-item-about:hover::before {
