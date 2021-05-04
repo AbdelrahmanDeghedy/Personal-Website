@@ -2,7 +2,6 @@ import { Component } from 'react';
 import './sass/main.scss';
 import Layout from './components/Layout';
 
-
 class App extends Component {
   
   render () {
