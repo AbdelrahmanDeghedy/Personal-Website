@@ -5,6 +5,7 @@ import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
 import Quotes from './Quotes';
+import Resume from './Resume';
 
 class Layout extends Component {
     render () {
@@ -18,6 +19,7 @@ class Layout extends Component {
                     <div className="main-portion">
                         <Route exact path="/" component={About}/>
                         <Route exact path="/contact" component={Contact}/>
+                        <Route exact path="/resume" component={Resume}/>
                         <Route exact path="/projects" component={Projects}/>
                         <Route exact path="/quotes" component={Quotes}/>
                         

@@ -1,0 +1,154 @@
+.line {
+    height: .5px;
+    width: 100%;
+    background-color: black;
+    display: block;
+}
+
+.resume-container {
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.resume-header {
+    width: 85%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: var(--border);
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+
+.resume-section-header {
+    // margin-left: -2rem;    
+}
+
+.resume-section-content {
+    margin-top: 1rem;
+    margin-left: 4rem;
+}
+
+.resume-link {
+    color: #2196f3;
+}
+
+.resume-content {
+    padding: 3rem;
+}
+
+
+.resume-content-item {
+    margin-bottom: 2rem;
+}
+
+.resume-summary {
+
+}
+
+.resume-education {
+
+}
+
+.resume-education-gpa {
+    color:#ad5c00;
+}
+
+.resume-projects {
+
+}
+
+
+.resume-skills {
+
+}
+
+.resume-skills-header {
+    display: inline;
+    font-size: 110%;
+    font-weight: 900;
+}
+
+.resume-skill-item {
+    display: flex;
+}
+
+.resume-skill-item-list {
+    display: flex;
+}
+
+
+
+.resume-achievements-activities {
+    
+}
+
+.resume-section-content-second-level{
+    margin-top: .1rem;
+}
+
+.inline li:not(:last-child)::after {
+    content: ",\00a0";
+}
+
+.inline li {
+    list-style: none;
+}
+
+
+//   .resume-header {
+//     text-align: center;
+//     border-bottom: 1px solid #999;
+//     margin: 0;
+//   }
+//   .resume-header h3 {
+//     color: #666;
+//     line-height: 13px;
+//   }
+//   .resume-content {
+//     padding-left: 10px;
+//   }
+//   .resume-content div {
+//     margin-bottom: 20px;
+//   }
+//   .list li {
+//     list-style: none;
+//   }
+
+//   .inline li {
+//     display: inline;
+//     line-height: 45px;
+//   }
+
+//   .resume-content h2 {
+//     color: #000;
+//     font-weight: bolder;
+//   }
+//   .work, .activities {
+//     text-decoration: underline;
+
+//   }
+//   .links a {
+//     font-size: large;
+//   }
+//   a {
+//     text-decoration: underline;
+//     color: #2196f3;
+//   }
+
+//   .skills {
+//     display: inline;
+//     font-size: 110%;
+//     font-weight: 900;
+//   }
+//   .skill-list {
+
+//   }
+
+
+  

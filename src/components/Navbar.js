@@ -53,9 +53,9 @@ class Navbar extends Component {
                             <li className="navbar-item navbar-item-contact" onClick={this.handleClick}> Contact Me </li>
                         </Link>
 
-                        <a rel="noreferrer" className="navbar-resume-link" href="https://drive.google.com/file/d/14pER2spfeTQz0BPpgMcPnI9opqfbBtD5/view" target="_blank">
-                            <li className="navbar-item navbar-item-resume" > Resume </li>
-                        </a>
+                        <Link to="/resume" className="remove-link-style">
+                            <li className="navbar-item navbar-item-resume" onClick={this.handleClick}> Resume </li>
+                        </Link>
                         <Link to="projects" className="remove-link-style">
                             <li className="navbar-item navbar-item-projects" onClick={this.handleClick}> Projects </li>
                         </Link>
