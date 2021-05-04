@@ -78,7 +78,7 @@ class Contact extends Component {
                         <input 
                             type="hidden"
                             name="_next"
-                            value="http://localhost:3000/"
+                            value="https://abdelrahman-deghedy.vercel.app"
                         />
 
                         <input 
